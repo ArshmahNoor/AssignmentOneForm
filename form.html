@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arshmah Noor - 38</title>
+    
+    <style>
+        body {
+            background-color: #1A1A1E;
+            color: #FFFF;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 2rem;
+            width: 400px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin: 4px 0 12px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #c20e86;
+            color: #FFFF;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="card">
+        <h2>Student Registration</h2>
+
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Roll No</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Date of Birth</label>
+        <input type="date" required>
+
+        <label>Program</label>
+        <select required>
+            <option value="" disabled selected>Select Program</option>
+            <option>BS-CS</option>
+            <option>BS-SE</option>
+            <option>BS-IT</option>
+        </select>
+
+        <label>Type:</label><br>
+        <label>
+            <input type="radio" name="t" value="full" required style="width:auto"> Full-time
+        </label>
+        <label>
+            <input type="radio" name="t" value="part" style="width:auto"> Part-time
+        </label>
+
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
